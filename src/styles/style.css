@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.col-6 {
+  max-width: 50%;
+  flex: 0 0 50%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  color: white;
+  font-family: 'Lucida Sans';
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url('./../images/header-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.header-text__container,
+.header-nav__container {
+  padding-top: 35px;
+}
+
+.header-text__container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-text__inner {
+  font-style: italic;
+  font-size: 19px;
+  letter-spacing: 2.5px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -30px;
+  top: -8px;
+}
+
+.header-text {
+  position: relative;
+  left: 3px;
+  top: 6px;
+}
+
+.header-nav__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 453px;
+  height: 41px;
+  margin-left: 57px;
+  margin-top: 28px;
+  position: relative;
+  background: #f5c506;
+  color: #9b7d08;
+  font-family: 'Segoe WP';
+  font-weight: 600;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.8px;
+}
+
+.nav::before {
+  content: '';
+  display: block;
+  width: 101%;
+  height: 108%;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  background-image: url('./../images/nav-bg.png');
+  background-size: cover;
+}
+
+.nav-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-item-1 {
+  left: 24px;
+}
+
+.nav-item-2 {
+  left: 15px;
+}
+
+.nav-item-2::after,
+.nav-item-2::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #9b7d08;
+  position: absolute;
+  top: 0;
+}
+
+.nav-item-2::before {
+  left: 6px;
+}
+
+.nav-item-2::after {
+  right: 11px;
+}
+
+.nav-item-3 {
+  left: 5px;
+}
+
+.nav-item__image {
+  position: relative;
+  left: -9px;
+}
