@@ -5,6 +5,8 @@
 
 .row {
   display: flex;
+  padding: 0 7.26vw;
+  position: relative;
 }
 
 .col-6 {
@@ -23,6 +25,10 @@ body {
   font-family: 'Lucida Sans';
 }
 
+.yellow {
+  color: #f5c506;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -32,16 +38,17 @@ body {
   background-image: url('./../images/header-bg.png');
   background-position: center;
   background-size: cover;
+  padding-bottom: 67px;
 }
 
 .header-text__container,
 .header-nav__container {
-  padding-top: 35px;
+  padding: 35px 0;
 }
 
 .header-text__container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .header-text__inner {
@@ -52,13 +59,13 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  left: -30px;
+  left: -1px;
   top: -8px;
 }
 
 .header-text {
   position: relative;
-  left: 3px;
+  left: 4px;
   top: 6px;
 }
 
@@ -142,4 +149,73 @@ body {
 .nav-item__image {
   position: relative;
   left: -9px;
+}
+
+.header-video {
+  position: relative;
+  left: 49px;
+  margin-top: 13px;
+}
+
+.header-video__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-video-title__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-video-title {
+  font-family: 'Asap';
+  font-size: 40px;
+  letter-spacing: 2.1px;
+  position: relative;
+  top: -10px;
+  left: -28px;
+  text-align: center;
+}
+
+.header-video-title .yellow {
+  letter-spacing: 2.5px;
+  position: relative;
+  left: -8px;
+}
+
+.control {
+  width: 32px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 145px;
+  background: #f5c506;
+}
+
+.inactive {
+  background: #c6a30d;
+}
+
+.control img {
+  width: 14px;
+  height: 20px;
+}
+
+.left-control {
+  left: 0;
+}
+
+.left-control img {
+  transform: rotate(180deg);
+}
+
+.right-control {
+  right: 0;
+}
+
+.video-row {
+  padding: 0;
 }
