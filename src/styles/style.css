@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .row {
   display: flex;
   padding: 0 7.26vw;
@@ -100,6 +104,16 @@ body {
   align-items: center;
   justify-content: center;
   letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: white;
+  font-weight: 400;
+}
+
+.control {
+  cursor: pointer;
 }
 
 .nav::before {
@@ -623,4 +637,412 @@ ul {
   position: relative;
   left: 6px;
   top: 1px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .contaier {
+    max-width: 640px;
+  }
+
+  .row {
+    padding: 0;
+  }
+
+  .header-video-title__container,
+  .control,
+  .footer-left,
+  .nav::before,
+  .slider-title,
+  .date-card,
+  .header-video,
+  .slider__twitter,
+  .slider-range,
+  .minus {
+    content: none;
+    display: none;
+  }
+
+  .mobile {
+    display: unset;
+  }
+
+  .slider-item__inner {
+    width: unset;
+  }
+
+  .header-text__container,
+  .header-nav__container {
+    padding: 0;
+  }
+
+  .header-text__container,
+  .header-nav__container {
+    height: 62px;
+  }
+
+  .header-text__inner {
+    letter-spacing: 0.5px;
+    left: 0;
+    top: 0;
+  }
+
+  .header-text__inner svg {
+    width: 39px;
+    position: relative;
+    left: 12px;
+    top: -1px;
+  }
+
+  .header-text {
+    font-size: 19px;
+    font-weight: 100;
+    left: 19px;
+    top: 2px;
+  }
+
+  .col-md-4 {
+    max-width: 29%;
+    flex: 0 0 29%;
+  }
+
+  .col-md-8 {
+    max-width: 71%;
+    flex: 0 0 71%;
+  }
+
+  .col-md-12 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .col-md-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .header-text__container {
+    background: #575757;
+  }
+
+  .nav {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 19px;
+  }
+
+  .nav-item {
+    letter-spacing: 0.1px;
+  }
+
+  .nav-item__image {
+    height: 21px;
+  }
+
+  .nav-item-1 {
+    left: 16px;
+  }
+
+  .nav-item-2 {
+    left: 14px;
+  }
+
+  .nav-item-3 {
+    left: 6px;
+  }
+
+  .header-video__container {
+    justify-content: unset;
+  }
+
+  .header-video__inner {
+    width: 100%;
+  }
+
+  .header-video {
+    margin: 0;
+    left: 0;
+    top: -4px;
+    width: 100%;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .features-container {
+    box-shadow: none;
+  }
+
+  .main {
+    margin-top: -12px;
+  }
+
+  .features-container {
+    background-color: white;
+  }
+
+  .feature-item__1 img {
+    height: 60px;
+  }
+
+  .feature-title {
+    font-size: 23px;
+  }
+
+  .feature-item {
+    min-height: 164px;
+  }
+
+  .features-list {}
+
+  .feature-item img,
+  .feature-title {
+    z-index: 20;
+  }
+
+  .features-list::after,
+  .features-list::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+  }
+
+  .features-list::after {
+    background-image: url(./../images/features-shadow_1.png);
+    top: -4px;
+    height: 102%;
+  }
+
+  .features-list::before {
+    background-image: url(./../images/features-shadow_2.png);
+    top: -10px;
+  }
+
+  .slider-item {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
+  .slider__twitter {
+    background: #f5c507;
+    grid-area: 2/1/3/3;
+    left: 0;
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+  }
+
+  .twitter-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .twitter-logo img {
+    position: relative;
+    top: 7px;
+    left: 4px;
+  }
+
+  .slider-item__inner:nth-child(2) {
+    width: 299px;
+    height: 231px;
+    margin: 18px 0 10px 9px;
+  }
+
+  .slider-item {
+    padding-top: 0;
+  }
+
+  .slider-container {
+    background: white;
+  }
+
+  .slider-item__text {
+    font-size: 28px;
+    padding: 15px 20px 0 26px;
+    letter-spacing: 0.9px;
+    word-spacing: -1px;
+    line-height: 120%;
+  }
+
+  .trigger {
+    right: 9px;
+    bottom: 11px;
+    font-size: 21px;
+  }
+
+  .slider-video-container {
+    top: 16px;
+    left: -2px;
+  }
+
+  .feature-item__1 .feature-content {
+    top: -3px;
+    left: -17px;
+  }
+
+  .feature-title {
+    top: 17px;
+    left: 5px;
+  }
+
+  .feature-item__2 img {
+    height: 67px;
+  }
+
+  .feature-item__2 .feature-content {
+    top: -3px;
+    left: 8px;
+  }
+
+  .feature-item__2 .feature-title {
+    left: 1px;
+  }
+
+  .feature-item__3 .feature-content {
+    top: -3px;
+    left: -3px;
+  }
+
+  .feature-item__3 img {
+    height: 69px;
+  }
+
+  .feature-item__3 .feature-title {
+    top: 13px;
+    left: 6px;
+  }
+
+  .twits-container {
+    display: grid;
+    grid-template: 4fr 1fr / 1fr;
+    padding-top: 18px;
+  }
+
+  .twit {
+    font-size: 13px;
+    background: url(./../images/message-bg.png);
+    background-repeat: no-repeat;
+    color: black;
+    padding: 4px 54px 0 29px;
+    height: 42px;
+    position: relative;
+    top: 5px;
+    left: 3px;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+  }
+
+  .twit:nth-child(2) {
+    top: 3px;
+    opacity: 0.8;
+  }
+
+  .twit:nth-child(3) {
+    top: 2px;
+    opacity: 0.8;
+  }
+
+  .twits-list {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+  }
+
+  .textarea {
+    border: 1px solid #d0a806;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 30px;
+    min-width: 201px;
+    position: relative;
+    left: 4px;
+  }
+
+  .submit {
+    height: 30px;
+    width: 70px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #d69412;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #d0a806;
+    position: relative;
+    left: -5px;
+    letter-spacing: 0;
+  }
+
+  .form {
+    position: relative;
+    top: -11px;
+    left: 12px;
+  }
+
+  .main {
+    z-index: 25;
+    position: relative;
+  }
+
+  .footer {
+    margin-top: -27px;
+    z-index: 100;
+    position: relative;
+  }
+
+  .footer-title {
+    font-family: 'Open Sans';
+    font-size: 38px;
+    word-spacing: 3px;
+    text-align: center;
+    left: -5px;
+  }
+
+  .footer>.container {
+    padding-top: 31px;
+  }
+
+  .footer-sizes {
+    margin-top: 73px;
+    left: 57px;
+  }
+
+  .footer-right {
+    overflow: hidden;
+  }
+
+  .footer-logo {
+    margin-top: 6px;
+    height: 43px;
+  }
+
+  .footer-logo__text {
+    font-size: 17px;
+  }
+
+  .footer-text__inner {
+    left: 64px;
+
+  }
+
+  .footer-text__inner svg {
+    width: 33px;
+    height: 33px;
+  }
+
+  .main,
+  .header {
+    overflow: hidden;
+  }
+
+  .size__circle {
+    top: -41px;
+    left: -30px;
+  }
 }

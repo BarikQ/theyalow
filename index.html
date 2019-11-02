@@ -13,7 +13,7 @@
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-6 header-text__container">
+          <div class="col-6 col-md-4 header-text__container">
             <div class="header-text__inner">
               <svg
                 width="85"
@@ -39,7 +39,7 @@
             </div>
           </div>
 
-          <div class="col-6 header-nav__container">
+          <div class="col-6  col-md-8  header-nav__container">
             <nav class="nav">
               <a class="nav-item nav-item-1" href="#">
                 <img
@@ -74,13 +74,18 @@
             <img src="./src/images/arrow.png" alt="" />
           </div>
 
-          <div class="col-6 header-video__container">
+          <div class="col-6 col-md-12 header-video__container">
             <div class="header-video__inner">
               <video
                 class="header-video"
                 src="https://youtu.be/7tFJ-0yGP4w"
                 poster="./src/images/header-poster.png"
                 controls
+              ></video>
+              <video
+                class="header-video mobile"
+                src="https://youtu.be/7tFJ-0yGP4w"
+                poster="./src/images/header-poster__mobile.png"
               ></video>
             </div>
           </div>
@@ -143,8 +148,12 @@
 
               <div class="slider-card slider-item__inner col-4">
                 <p class="slider-item__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor inci<span class="minus">-</span>didunt ut
+                  Lorem ipsum dolor sit amet, consecte<span class="minus mobile"
+                    >-</span
+                  >tur adipisicing elit, sed do eiusmod tempor inci<span
+                    class="minus"
+                    >-</span
+                  >didunt ut
                 </p>
 
                 <span class="trigger">+</span>
@@ -155,13 +164,49 @@
                   class="slider-video"
                   src="https://youtu.be/7tFJ-0yGP4w"
                   poster="./src/images/slider-poster.png"
-                  controls
                 ></video>
               </div>
 
               <div class="slider-card slider__twitter slider-item__inner col-4">
                 <span class="trigger">+</span>
                 <span class="number">22</span>
+              </div>
+
+              <div
+                class="slider-card slider__twitter slider-item__inner col-12 mobile"
+              >
+                <div class="twitter-logo">
+                  <img src="./src/images/twitter_mobile.png" alt="o" />
+                </div>
+
+                <div class="twits-container">
+                  <ul class="twits-list">
+                    <li class="twit">
+                      <span class="twit__message"
+                        >Daily Mobile UI Design Inspiration #1 via</span
+                      >
+                      <span class="twit__author">@cssauthor</span>
+                    </li>
+
+                    <li class="twit">
+                      <span class="twit__message"
+                        >Daily Mobile UI Design Inspiration #1 via</span
+                      >
+                      <span class="twit__author">@cssauthor</span>
+                    </li>
+
+                    <li class="twit">
+                      <span class="twit__message"
+                        >Daily Mobile UI Design Inspiration #1 via</span
+                      >
+                      <span class="twit__author">@cssauthor</span>
+                    </li>
+                  </ul>
+                  <form class="form" action="#">
+                    <input class="textarea" type="text" name="" id="" />
+                    <input class="submit" type="submit" value="Tweet" />
+                  </form>
+                </div>
               </div>
 
               <div class="date-card">
@@ -183,7 +228,7 @@
         </h3>
 
         <div class="row footer-row">
-          <div class="col-7 footer-right">
+          <div class="col-7 col-md-12 footer-right">
             <div class="footer-sizes">
               <div class="size desktop">
                 <img src="./src/images/footer/desk.png" alt="o" />
